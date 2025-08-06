@@ -72,3 +72,39 @@
   padding-left: $grid-gutter;
   vertical-align: top;
 }
+
+.certificates {
+  margin-top: 15px;
+
+  h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  text-align: center;
+}
+
+.certificate-item {
+  font-family: "clearfix";
+  font-weight: 400;
+  padding: 10px;
+  background: #efefef;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+  text-align: center;        // <-- centrado horizontal
+  display: flex;             // <-- usamos flex para centrar bien
+  align-items: center;       // <-- centrado vertical
+  justify-content: center;   // <-- centrado horizontal
+  min-height: 60px;          // <-- asegura que tenga algo de altura uniforme
+}
+
+.certificate-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
