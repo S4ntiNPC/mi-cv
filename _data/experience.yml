@@ -1,15 +1,21 @@
 # Jobs
-# Unico trabajo
-- company: Suburbia
-  position: Cashier
-  duration: Ene, 2024 &mdash; Present
-  summary: Experienced in providing excellent customer service by assisting clients with inquiries, processing returns and exchanges, and resolving conflicts efficiently. Skilled in inventory control and management, ensuring accurate stock levels and organization to optimize store operations. Proficient in handling cash transactions, maintaining cleanliness and order, and creating a welcoming environment for customers. Strong problem-solving abilities with a focus on efficiency and customer satisfaction.
 
-# Director of Digital Stratgy
-  #company: United Nations Human Rights Council
-  #position: Director of Digital Strategy
-  #duration:  Jun, 2010 &mdash; Sept, 2013
-  #summary: If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.
+- company: Tecmilenio University
+  role: Process and Quality Specialist (Project)
+  duration: Aug 2025 &ndash; Present
+  summary: |
+    A 6-month project to standardize processes and roles, improving the student experience under a QMS framework inspired by ISO 21001 and the Toyota Way.
+  highlights:
+    - Mapped and standardized 100% of campus positions, defining KPIs, responsibilities, and control points.
+    - Charted key processes, identifying inputs, outputs, roles, and risks.
+    - Designed and implemented the Communication Matrix and Risk Matrix for priority processes.
+    - Established the centralized documentation repository and the continuous improvement (Kaizen) plan based on indicators.
+
+- company: Suburbia
+  role: Cashier
+  duration: Jan, 2024 &mdash; Present
+  summary: |
+    Experienced in customer service, handling inquiries, returns, exchanges, and efficient conflict resolution.
 
 
 # Communications Coordinator

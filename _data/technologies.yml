@@ -1,0 +1,26 @@
+- group: Databases
+  skills:
+    - name: MySQL
+      width: 45%
+    - name: MongoDB
+      width: 30%
+
+- group: Tools
+  skills:
+    - name: Git
+      width: 40%
+    - name: GitHub
+      width: 30%
+    - name: Docker
+      width: 25%
+    - name: AWS
+      width: 20%
+
+- group: Languages
+  skills:
+    - name: Java
+      width: 35%
+    - name: Python
+      width: 40%
+    - name: C#
+      width: 20%

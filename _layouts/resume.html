@@ -53,7 +53,6 @@
       {% endif %}
 
       {% if site.resume_section_education %}
-      <!-- EDUCATION (Ahora va antes de Experience) -->
       <section class="content-section">
         <header class="section-header">
           <h2>Education</h2>
@@ -77,7 +76,6 @@
           <p class="resume-item-copy">{{ education.summary }}</p>
 
           {% if education.uni == "Tecmilenio University" %}
-          <!-- CERTIFICADOS -->
           <div class="certificates">
             <h4 class="resume-item-details">Certificates</h4>
             <div class="certificates-grid">
@@ -93,48 +91,48 @@
       {% endif %}
 
       {% if site.resume_section_experience %}
-      <!-- TECHNOLOGIES & TOOLS -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        {% for job in site.data.experience %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details group" itemprop="description">{{ job.role }} &bull; {{ job.duration }}</h4>
+          <p class="resume-item-copy">{{ job.summary }}</p>
+          
+          <ul class="resume-item-list">
+            {% for item in job.highlights %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+
+        </div>
+        {% endfor %}
+
+      </section>
+      {% endif %}
+      {% if site.resume_section_technologies %}
       <section class="content-section">
         <header class="section-header">
           <h2>Technologies &amp; Tools</h2>
         </header>
 
-        <!-- Bases de datos -->
-        <h3 class="resume-item-title">Databases</h3>
+        {% for tech_group in site.data.technologies %}
+        
+        <h3 class="resume-item-title">{{ tech_group.group }}</h3>
+        
         <div class="bar-container">
-          <span class="label">MySQL</span>
-          <div class="bar"><div class="fill" style="width: 45%;"></div></div>
-          <span class="label">MongoDB</span>
-          <div class="bar"><div class="fill" style="width: 30%;"></div></div>
+          {% for skill in tech_group.skills %}
+            <span class="label">{{ skill.name }}</span>
+            <div class="bar"><div class="fill" style="width: {{ skill.width }};"></div></div>
+          {% endfor %}
         </div>
+        {% endfor %}
 
-        <!-- Herramientas -->
-        <h3 class="resume-item-title">Tools</h3>
-        <div class="bar-container">
-          <span class="label">Git</span>
-          <div class="bar"><div class="fill" style="width: 40%;"></div></div>
-          <span class="label">GitHub</span>
-          <div class="bar"><div class="fill" style="width: 30%;"></div></div>
-          <span class="label">Docker</span>
-          <div class="bar"><div class="fill" style="width: 25%;"></div></div>
-          <span class="label">AWS</span>
-          <div class="bar"><div class="fill" style="width: 20%;"></div></div>
-        </div>
-
-        <!-- Lenguajes -->
-        <h3 class="resume-item-title">Languages</h3>
-        <div class="bar-container">
-          <span class="label">Java</span>
-          <div class="bar"><div class="fill" style="width: 35%;"></div></div>
-          <span class="label">Python</span>
-          <div class="bar"><div class="fill" style="width: 40%;"></div></div>
-          <span class="label">C#</span>
-          <div class="bar"><div class="fill" style="width: 20%;"></div></div>
-        </div>
       </section>
-
       {% endif %}
-
       {% if site.resume_section_skills %}
       <section class="content-section">
         <header class="section-header">
