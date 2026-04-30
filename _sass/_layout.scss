@@ -84,7 +84,14 @@
 
 .certificates-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); // Modificado para ajustar mejor los 4 elementos
+  gap: 12px;
+  text-align: center;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 12px;
   text-align: center;
 }
@@ -92,16 +99,39 @@
 .certificate-item {
   font-family: "clearfix";
   font-weight: 400;
-  padding: 10px;
+  padding: 12px 10px;        // <-- Ajuste de padding
   background: #efefef;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   transition: transform 0.2s ease;
-  text-align: center;        // <-- centrado horizontal
-  display: flex;             // <-- usamos flex para centrar bien
-  align-items: center;       // <-- centrado vertical
-  justify-content: center;   // <-- centrado horizontal
-  min-height: 60px;          // <-- asegura que tenga algo de altura uniforme
+  text-align: center;
+  display: flex;
+  flex-direction: column;    // <-- NUEVO: Apila los elementos verticalmente
+  align-items: center;
+  justify-content: center;
+  min-height: 75px;          // <-- Un poco más de altura para el doble texto
+  
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.certificate-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+// NUEVAS CLASES PARA EL TEXTO INTERNO
+.cert-title {
+  font-size: 0.95em;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.cert-issuer {
+  font-size: 0.75em;         // <-- Letras pequeñas
+  color: #666;               // <-- Tono gris sutil
+  line-height: 1.2;
 }
 
 .certificate-item:hover {

@@ -79,11 +79,36 @@
           <div class="certificates">
             <h4 class="resume-item-details">Certificates</h4>
             <div class="certificates-grid">
-              <div class="certificate-item">Big Data Technologies</div>
-              <div class="certificate-item">DevOps Methodology</div>
-              <div class="certificate-item">Productivity Based on Technological Tools</div>
+              <div class="certificate-item">
+                <span class="cert-title">Big Data Technologies</span>
+                <span class="cert-issuer">Tecmilenio University</span>
+              </div>
+              <div class="certificate-item">
+                <span class="cert-title">DevOps Methodology</span>
+                <span class="cert-issuer">Tecmilenio University</span>
+              </div>
+              <div class="certificate-item">
+                <span class="cert-title">Productivity Based on Technological Tools</span>
+                <span class="cert-issuer">Tecmilenio University</span>
+              </div>
             </div>
           </div>
+
+          <!-- SECCIÓN DE CONSTANCIAS (TRAINING & WORKSHOPS) -->
+          {% if site.data.constancias %}
+          <div class="certificates">
+            <h4 class="resume-item-details">Training &amp; Workshops</h4>
+            <div class="certificates-grid">
+              {% for item in site.data.constancias %}
+              <a href="{{ item.image_url }}" target="_blank" rel="noopener noreferrer" class="certificate-item">
+                <span class="cert-title">{{ item.title }}</span>
+                <span class="cert-issuer">{{ item.issuer }}</span>
+              </a>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+          
           {% endif %}
         </div>
         {% endfor %}

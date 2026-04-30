@@ -1,25 +1,40 @@
 # Jobs
 
+- company: Jiincar
+  role: Full Stack Developer
+  duration: Feb, 2026 &mdash; Present
+  summary: |
+    I developed a transactional MVP for a comprehensive mobility platform, utilizing a hybrid microservices architecture and optimizing deployment workflows.
+  highlights:
+    - I built the mobile frontend using React Native with Expo and engineered the backend microservices using .NET 8 (C#).
+    - I developed an administrative dashboard in Angular and integrated secure user authentication via Duende IdentityServer.
+    - I configured a zero-cost deployment pipeline utilizing Vercel, Cloudflare Tunnels, and GitHub for version control.
+    - I implemented core platform features including user registration, ride requests, driver assignment, and real-time GPS tracking.
+
+- company: Tecmilenio University
+  role: Web Developer (<a href="https://ar-tfest.vercel.app/" target="_blank" rel="noopener noreferrer">National ARTfest</a>)
+  duration: Jan, 2026 &mdash; Feb, 2026
+  summary: |
+    I developed the official web platform for the National ARTfest 2026, delivering a complete and functional solution within a strict two-week deadline to serve attendees and staff.
+  highlights:
+    - I designed and implemented a minimalist interface featuring a dynamic event agenda, an interactive map, and detailed workshop speaker profiles.
+    - I managed and updated the database to efficiently organize simultaneous events categorized by discipline, schedule, and venue.
+    - I built a dedicated food module to streamline catering logistics for attendees during the 4-day event.
+    - I successfully launched the platform, achieving over 550 views and ensuring a smooth digital experience for the national event.
+
 - company: Tecmilenio University
   role: Process and Quality Specialist (Project)
-  duration: Aug 2025 &ndash; Present
+  duration: Aug, 2025 &ndash; Present
   summary: |
-    A 6-month project to standardize processes and roles, improving the student experience under a QMS framework inspired by ISO 21001 and the Toyota Way.
+    I led a 6-month project to standardize processes and roles, improving the student experience under a QMS framework inspired by ISO 21001 and the Toyota Way.
   highlights:
-    - Mapped and standardized 100% of campus positions, defining KPIs, responsibilities, and control points.
-    - Charted key processes, identifying inputs, outputs, roles, and risks.
-    - Designed and implemented the Communication Matrix and Risk Matrix for priority processes.
-    - Established the centralized documentation repository and the continuous improvement (Kaizen) plan based on indicators.
+    - I mapped and standardized 100% of campus positions, defining KPIs, responsibilities, and control points.
+    - I charted key processes, identifying inputs, outputs, roles, and risks.
+    - I designed and implemented the Communication Matrix and Risk Matrix for priority processes.
+    - I established the centralized documentation repository and the continuous improvement (Kaizen) plan based on indicators.
 
 - company: Suburbia
   role: Cashier
-  duration: Jan, 2024 &mdash; Present
+  duration: Jan, 2024 &mdash; Mar, 2026
   summary: |
-    Experienced in customer service, handling inquiries, returns, exchanges, and efficient conflict resolution.
-
-
-# Communications Coordinator
-#company: Springfield Women & Children's Center
-  # position: Communications Coordinator
-  # duration:   Jun, 2008  &mdash; May, 2010
-  # summary: Led communication efforts across digital and traditional media channels for marketing and public relations, internal communication strategies, and coordinated support programs for the recipients of the center's services.
+    I provided excellent customer service, handling inquiries, returns, exchanges, and ensuring efficient conflict resolution on a daily basis.
