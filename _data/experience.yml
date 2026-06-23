@@ -15,10 +15,10 @@
   role: Web Developer (<a href="https://ar-tfest.vercel.app/" target="_blank" rel="noopener noreferrer">National ARTfest</a>)
   duration: Jan, 2026 &mdash; Feb, 2026
   summary: |
-    I developed the official web platform for the National ARTfest 2026, delivering a complete and functional solution within a strict two-week deadline to serve attendees and staff.
+    I developed the official web platform for the National ARTfest 2026, delivering a complete and functional solution within a strict two-week deadline to serve attendees and staff. I used Next.js, TypeScript, and Tailwind CSS to create a responsive and user-friendly interface, ensuring accessibility and optimal performance across devices.
   highlights:
     - I designed and implemented a minimalist interface featuring a dynamic event agenda, an interactive map, and detailed workshop speaker profiles.
-    - I managed and updated the database to efficiently organize simultaneous events categorized by discipline, schedule, and venue.
+    - I improved the data structure to efficiently organize concurrent events, categorized by discipline, time, and location.
     - I built a dedicated food module to streamline catering logistics for attendees during the 4-day event.
     - I successfully launched the platform, achieving over 550 views and ensuring a smooth digital experience for the national event.
 
