@@ -22,6 +22,17 @@
       </script>
       <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+      <nav class="sticky-index no-print">
+        <ul>
+          {% if site.resume_section_projects %}<li><a href="#life-purpose">Life Purpose</a></li>{% endif %}
+          {% if site.resume_section_education %}<li><a href="#education">Education</a></li>{% endif %}
+          {% if site.resume_section_experience %}<li><a href="#experience">Experience</a></li>{% endif %}
+          {% if site.resume_section_technologies %}<li><a href="#technologies">Technologies</a></li>{% endif %}
+          {% if site.resume_section_skills %}<li><a href="#soft-skills">Soft Skills</a></li>{% endif %}
+          {% if site.resume_section_recognition %}<li><a href="#recognition">Recognition</a></li>{% endif %}
+          {% if site.resume_section_associations %}<li><a href="#associations">Associations</a></li>{% endif %}
+        </ul>
+      </nav>
       <header class="page-header">
             {% if site.resume_avatar == 'true' %}
             <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
@@ -47,29 +58,21 @@
             {% if site.resume_looking_for_work == 'yes' %}
             <div class="contact-wrapper no-print">
               <button class="contact-button" id="contact-toggle-btn" onclick="toggleContactMenu()">Contáctame</button>
-              
               <div class="contact-info-blocks" id="contact-info-blocks" style="display: none;">
-                
                 <div class="info-block">
                   <span class="info-label">Teléfono</span>
                   <div class="info-row">
                     <a href="tel:{{ site.resume_contact_telephone }}">{{ site.resume_contact_telephone }}</a>
-                    <button class="copy-btn" id="copy-phone-btn" onclick="copyContactInfo('{{ site.resume_contact_telephone }}', 'copy-phone-btn')" title="Copiar teléfono">
-                      📋
-                    </button>
+                    <button class="copy-btn" id="copy-phone-btn" onclick="copyContactInfo('{{ site.resume_contact_telephone }}', 'copy-phone-btn')" title="Copiar teléfono">📋</button>
                   </div>
                 </div>
-                
                 <div class="info-block">
-                  <span class="info-label">Correo</span>
+                  <span class="info-label">Correos</span>
                   <div class="info-row">
                     <a href="mailto:{{ site.resume_contact_email }}">{{ site.resume_contact_email }}</a>
-                    <button class="copy-btn" id="copy-email-btn" onclick="copyContactInfo('{{ site.resume_contact_email }}', 'copy-email-btn')" title="Copiar correo">
-                      📋
-                    </button>
+                    <button class="copy-btn" id="copy-email-btn" onclick="copyContactInfo('{{ site.resume_contact_email }}', 'copy-email-btn')" title="Copiar correo">📋</button>
                   </div>
                 </div>
-
               </div>
             </div>
 
@@ -77,7 +80,6 @@
               function toggleContactMenu() {
                 var menu = document.getElementById('contact-info-blocks');
                 var btn = document.getElementById('contact-toggle-btn');
-                
                 if (menu.style.display === 'none' || menu.style.display === '') {
                   menu.style.display = 'flex';
                   btn.classList.add('active');
@@ -91,12 +93,8 @@
                 navigator.clipboard.writeText(text).then(function() {
                   var btn = document.getElementById(btnId);
                   var originalContent = btn.innerHTML;
-                  
-                  // Cambia el icono por una palomita y añade clase de éxito
                   btn.innerHTML = '✓';
                   btn.classList.add('copied');
-                  
-                  // Regresa al estado original después de 2 segundos
                   setTimeout(function() {
                     btn.innerHTML = originalContent;
                     btn.classList.remove('copied');
@@ -112,7 +110,7 @@
           </header>
 
           {% if site.resume_section_projects %}
-          <section class="content-section">
+          <section class="content-section" id="life-purpose">
             <header class="section-header">
               <h2>Life Purpose</h2>
             </header>
@@ -126,7 +124,7 @@
           {% endif %}
 
           {% if site.resume_section_education %}
-          <section class="content-section">
+          <section class="content-section" id="education">
             <header class="section-header">
               <h2>Education</h2>
             </header>
@@ -192,7 +190,7 @@
           {% endif %}
 
           {% if site.resume_section_experience %}
-          <section class="content-section">
+          <section class="content-section" id="experience">
             <header class="section-header">
               <h2>Experience</h2>
             </header>
@@ -216,7 +214,7 @@
           {% endif %}
 
           {% if site.resume_section_technologies %}
-          <section class="content-section">
+          <section class="content-section" id="technologies">
             <header class="section-header">
               <h2>Technologies &amp; Tools</h2>
             </header>
@@ -237,7 +235,7 @@
           {% endif %}
 
           {% if site.resume_section_skills %}
-          <section class="content-section">
+          <section class="content-section" id="soft-skills">
             <header class="section-header">
               <h2>Soft Skills</h2>
             </header>
@@ -251,7 +249,7 @@
           {% endif %}
 
           {% if site.resume_section_recognition %}
-          <section class="content-section">
+          <section class="content-section" id="recognition">
             <header class="section-header">
               <h2>Recognition</h2>
             </header>
@@ -266,7 +264,7 @@
           {% endif %}
 
           {% if site.resume_section_associations %}
-          <section class="content-section">
+          <section class="content-section" id="associations">
             <header class="section-header">
               <h2>Associations</h2>
             </header>
